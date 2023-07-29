@@ -1,0 +1,143 @@
+body{
+    background-color: #C8E9F0;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: white;
+}
+.navbar-menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar-item{
+    display: inline-block;
+    padding: 25px 10px;
+    position: relative;
+}
+.navbar-item a{
+    color: grey;
+    text-decoration: none;
+}
+.flex-box{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.flex-item{
+    padding: 10px 15px;
+}
+.flex-item p{
+    background-color: white;
+    padding: 16px;
+}
+.navbar-item:hover{
+    background-color: #f1f1f1;
+}
+.navbar-item:hover a{
+    color: #34c9cb;
+}
+.drop-menu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: white;
+    display: none;
+    z-index: 1;
+}
+.navbar-item:hover .drop-menu{
+    display: block;
+}
+.wrap{
+    width: 1200px;
+    margin: 10px auto;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #34c9cb;
+    border-bottom: 4px solid #248f91;
+    transition: all 3s ease;
+    border-radius: 8px;
+}
+.btn:active{
+    margin-top: 2px;
+    border-bottom-width: 2px;
+}
+.btn:focus{
+    margin-top: 2px;
+    border-bottom-width: 2px;
+}
+.btn:hover{
+    border-radius: 28px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 200px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.fixed{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #248f91;
+    line-height: 45px;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    background-image: url("../rasmlar/down-arrow.svg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+}
+.flex-item{
+    position: relative;
+    /*border: 1px solid red;*/
+    z-index: -1;
+}
+.badge{
+    background-color: #248f91;
+    color: white;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0 5px;
+    position: absolute;
+    right: 15px;
+    top: 26px;
+}
+
+.navbar-item::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url("../rasmlar/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    vert-align: middle;
+    margin-left: 4px;
+}
+
+
+
+
+
